@@ -1,0 +1,37 @@
+{
+  "name": "@julienbrg/human-behavior",
+  "description": "Proof-of-Humanity Cross-chain Registry",
+  "version": "0.1.0",
+  "author": {
+    "name": "julienbrg",
+    "url": "https://github.com/julienbrg"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "5.5.0"
+  },
+  "devDependencies": {
+    "forge-std": "github:foundry-rs/forge-std#v1.9.7",
+    "prettier": "^3.5",
+    "solhint": "^5.1"
+  },
+  "keywords": [
+    "blockchain",
+    "ethereum",
+    "forge",
+    "foundry",
+    "smart-contracts",
+    "solidity",
+    "template"
+  ],
+  "scripts": {
+    "clean": "rm -rf cache out",
+    "build": "forge build",
+    "forge-check": "forge fmt --check",
+    "forge-write": "forge fmt",
+    "lint": "bun run lint:sol && bun run prettier:check",
+    "lint:sol": "bun run forge-check && bun solhint \"{script,src,tests}/**/*.sol\"",
+    "prettier:check": "prettier --check \"**/*.{json,md,yml}\"",
+    "prettier:write": "prettier --write \"**/*.{json,md,yml}\"",
+    "test": "forge test"
+  }
+}
