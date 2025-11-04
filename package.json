@@ -1,8 +1,7 @@
 {
-  "name": "@julienbrg/human-behavior-",
+  "name": "@julienbrg/human-behavior",
   "description": "Proof-of-Humanity Cross-chain Registry",
-  "private": true,
-  "version": "1.0.0",
+  "version": "0.1.0",
   "author": {
     "name": "julienbrg",
     "url": "https://github.com/julienbrg"
